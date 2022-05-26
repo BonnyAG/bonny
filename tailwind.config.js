@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'sans': ['Monument Extended'],
+      'header': ['Monument Extended'],
     },
     extend: {},
   },
