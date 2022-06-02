@@ -38,26 +38,86 @@ sections:
           default: current
           localizable: true
           max_items: 1
+          width: 50
       -
         handle: template
         field:
           type: template
           display: Template
           localizable: true
+          width: 50
       -
-        handle: svg
+        handle: link_section
         field:
-          mode: list
-          container: assets
-          restrict: false
-          allow_uploads: true
-          show_filename: true
-          display: SVG
-          type: assets
-          icon: assets
+          display: Links
+          type: section
+          icon: section
           listable: hidden
           instructions_position: above
           read_only: false
+      -
+        handle: links
+        field:
+          collapse: false
+          sets:
+            new_link:
+              display: 'New Link'
+              fields:
+                -
+                  handle: icon
+                  field:
+                    mode: grid
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    display: Icon
+                    type: assets
+                    icon: assets
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+                -
+                  handle: name
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Name
+                    type: text
+                    icon: text
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+                -
+                  handle: description
+                  field:
+                    antlers: false
+                    display: Description
+                    type: textarea
+                    icon: textarea
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+                -
+                  handle: link_to
+                  field:
+                    collections:
+                      - pages
+                    display: 'Link To'
+                    type: link
+                    icon: link
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+          display: Links
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          instructions: 'Enter all links that need to be displayed on the home page'
   sidebar:
     display: Sidebar
     fields:

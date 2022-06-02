@@ -6,9 +6,6 @@ module.exports = {
     './content/**/*.md'
   ],
   theme: {
-    fontFamily: {
-      'header': ['Monument Extended'],
-    },
     extend: {},
   },
   plugins: [
