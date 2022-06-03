@@ -12,21 +12,22 @@
     </svg>  
 </a>
 
-<h1 class="text-5xl text-sky-900 mt-8 font-bold font-sans mb-5">{{ header }}</h1>
-<p class="text-pink-900">{{ content }}</p>
+<h1 class="text-5xl text-slate-900 mt-8 font-bold font-title mb-5 hover:text-sky-600 transition ease-in-out">{{ header }}</h1>
+<p class="font-body">{{ content }}</p>
 
 <section name="Links">
     {{ links }}
         <a href="{{ link_to }}">
-            <div class="flex mb-4 bg-white p-4 rounded-lg align-middle shadow-sm hover:bg-blue-50 hover:shadow-lg transition">
-                <div>
-                    {{ icon }}
-                        <img class="w-16" src="{{ url }}" alt="{{ alt }}">
-                    {{ /icon }}
+            <div class="flex mb-4 bg-white p-4 rounded-lg content-center shadow-sm hover:scale-105 hover:shadow-md transition ease-in-out">
+                <div class="flex-none p-4 bg-sky-300 rounded-full">
+                    
+                    <svg class="w-14 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        {{ icon }}
+                    </svg>
                 </div>
-                <div class="p-4">
-                    <h2 class="font-bold text-lg">{{ name }}</h2>
-                    <p class="font-light text-slate-400 italic">{{ description }}</p>
+                <div class="p-4 flex-initial">
+                    <h2 class="text-slate-900 font-bold font-subtitle text-lg capitalize">{{ name }}</h2>
+                    <p class="font-light font-body text-sm text-slate-400">{{ description }}</p>
                 </div>
             </div>
         </a>
