@@ -18,7 +18,7 @@
 <section name="Links">
     {{ links }}
         <a href="{{ coming_soon ? "#" : link_to }}">
-            <div class="flex mb-4 bg-white p-4 rounded-lg content-center shadow-sm content-center hover:scale-105 hover:shadow-md transition ease-in-out">
+            <div class="flex mb-4 bg-white p-4 rounded-lg content-center shadow-sm hover:scale-105 hover:shadow-md transition ease-in-out {{ coming_soon ? "border-2 border-yellow-400" : "" }}">
                 <div class="self-center">
                     <svg class="flex-none w-20 fill-white rounded-lg p-4 bg-sky-300 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         {{ icon }}
