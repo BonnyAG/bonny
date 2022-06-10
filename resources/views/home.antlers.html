@@ -1,4 +1,4 @@
-<a href="https://bonny.test">    
+<a href="bonny.test/">    
     <svg class="hover:scale-110 hover:-rotate-6 hover:-translate-x-1 hover:-translate-y-3 duration-100" width="200px" height="246px"  viewBox="0 0 147 246" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Desktop-HD" transform="translate(-647.000000, -81.000000)">
@@ -17,17 +17,17 @@
 
 <section name="Links">
     {{ links }}
-        <a href="{{ link_to }}">
-            <div class="flex mb-4 bg-white p-4 rounded-lg content-center shadow-sm hover:scale-105 hover:shadow-md transition ease-in-out">
-                <div class="flex-none p-4 bg-sky-300 rounded-full">
-                    
-                    <svg class="w-14 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <a href="{{ coming_soon ? "#" : link_to }}">
+            <div class="flex mb-4 bg-white p-4 rounded-lg content-center shadow-sm content-center hover:scale-105 hover:shadow-md transition ease-in-out">
+                <div class="self-center">
+                    <svg class="flex-none w-20 fill-white rounded-lg p-4 bg-sky-300 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         {{ icon }}
                     </svg>
                 </div>
-                <div class="p-4 flex-initial">
+                <div class="ml-2 p-3 flex-initial">
                     <h2 class="text-slate-900 font-bold font-subtitle text-lg capitalize">{{ name }}</h2>
-                    <p class="font-light font-body text-sm text-slate-400">{{ description }}</p>
+                    <p class="font-light font-body text-sm text-slate-400 max-w-sm mb-2">{{ description }}</p>
+                    {{ if coming_soon }} <span class="px-2 py-1 bg-yellow-200 font-semibold text-yellow-900 text-xs rounded-2xl">Coming Soon</span> {{ /if }}
                 </div>
             </div>
         </a>

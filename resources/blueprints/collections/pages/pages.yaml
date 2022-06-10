@@ -114,6 +114,20 @@ sections:
                     listable: hidden
                     instructions_position: above
                     read_only: false
+                    width: 33
+                -
+                  handle: coming_soon
+                  field:
+                    inline_label: 'Coming Soon'
+                    default: false
+                    display: 'Coming Soon'
+                    type: toggle
+                    icon: toggle
+                    instructions: "Toggle this if you haven't finished creating the new page but still want it displayed on the home page."
+                    width: 66
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
           display: Links
           type: replicator
           icon: replicator
