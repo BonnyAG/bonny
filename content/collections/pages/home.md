@@ -6,7 +6,7 @@ template: home
 header: 'Adam Bonny'
 author: 13ac10f5-c38d-4f21-82fb-4abc89573d76
 updated_by: 13ac10f5-c38d-4f21-82fb-4abc89573d76
-updated_at: 1654835018
+updated_at: 1655785534
 replicator_field:
   -
     name: 'Blog Posts'
@@ -56,5 +56,6 @@ links:
     description: "Like my work? Contact me and let's see what we can make together!"
     type: new_link
     enabled: true
-    coming_soon: true
+    coming_soon: false
+    link_to: 'entry::8ca130cd-cd87-4667-9bb0-2c3e37b31a41'
 ---

@@ -1,0 +1,44 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: email
+        field:
+          placeholder: me@myemail.com
+          input_type: text
+          antlers: false
+          display: Email
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+            - email
+      -
+        handle: subject
+        field:
+          placeholder: "Write a brief description of what you'd like to discuss with me..."
+          input_type: text
+          antlers: false
+          display: Subject
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          placeholder: "Write whatever you would like to talk about with me, I'm all ears..."
+          antlers: false
+          display: Content
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          read_only: false

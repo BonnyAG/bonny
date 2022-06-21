@@ -1,0 +1,7 @@
+title: 'Contact Me'
+email:
+  -
+    to: agbonnyh@gmail.com
+    from: "{{ email }}"
+    subject: 'New Contact Submission Form'
+    markdown: true
